@@ -1,0 +1,10 @@
+---
+# tasks file for write-output
+- name: Write vartiable onoutput file
+  copy:
+    content: "Variable defined {{variable1}} ,{{variable2}}"
+    dest: /tmp/var_output.ansible
+      
+  notify:
+    - restart myservice
+

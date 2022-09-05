@@ -1,0 +1,14 @@
+---
+- name: Provioning Server
+  hosts: all
+  become: yes
+  roles:
+    - role: write-output
+      vars:
+        variable1: test3cc
+        variable2: test4ic  
+
+   
+
+
+

@@ -1,0 +1,4 @@
+---
+# defaults file for write-output
+variable1: testuser1
+variable2: testuser2  

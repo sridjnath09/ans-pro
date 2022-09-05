@@ -1,0 +1,190 @@
+2022-09-05 12:44:28,257 p=3059 u=ubuntu n=ansible | PLAY [Setup DB] ******************************************************************************************************************************************************************************
+2022-09-05 12:44:28,272 p=3059 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2022-09-05 12:44:30,458 p=3059 u=ubuntu n=ansible | ok: [n2]
+2022-09-05 12:44:30,556 p=3059 u=ubuntu n=ansible | ok: [n1]
+2022-09-05 12:44:30,582 p=3059 u=ubuntu n=ansible | TASK [debug] *********************************************************************************************************************************************************************************
+2022-09-05 12:44:30,719 p=3059 u=ubuntu n=ansible | ok: [n1] => {
+    "dbname": "redhat"
+}
+2022-09-05 12:44:30,734 p=3059 u=ubuntu n=ansible | ok: [n2] => {
+    "dbname": "redhat"
+}
+2022-09-05 12:44:30,748 p=3059 u=ubuntu n=ansible | TASK [Install Mysql server] ******************************************************************************************************************************************************************
+2022-09-05 12:44:31,647 p=3059 u=ubuntu n=ansible | fatal: [n2]: FAILED! => {"changed": false, "msg": "No package matching 'mariadb-server' is available"}
+2022-09-05 12:44:31,668 p=3059 u=ubuntu n=ansible | fatal: [n1]: FAILED! => {"changed": false, "msg": "No package matching 'mariadb-server' is available"}
+2022-09-05 12:44:31,673 p=3059 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2022-09-05 12:44:31,673 p=3059 u=ubuntu n=ansible | n1                         : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-05 12:44:31,673 p=3059 u=ubuntu n=ansible | n2                         : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-05 12:46:48,178 p=3126 u=ubuntu n=ansible | PLAY [Setup DB] ******************************************************************************************************************************************************************************
+2022-09-05 12:46:48,192 p=3126 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2022-09-05 12:46:50,244 p=3126 u=ubuntu n=ansible | ok: [n2]
+2022-09-05 12:46:50,278 p=3126 u=ubuntu n=ansible | ok: [n1]
+2022-09-05 12:46:50,303 p=3126 u=ubuntu n=ansible | TASK [debug] *********************************************************************************************************************************************************************************
+2022-09-05 12:46:50,361 p=3126 u=ubuntu n=ansible | ok: [n1] => {
+    "dbname": "redhat"
+}
+2022-09-05 12:46:50,411 p=3126 u=ubuntu n=ansible | ok: [n2] => {
+    "dbname": "redhat"
+}
+2022-09-05 12:46:50,426 p=3126 u=ubuntu n=ansible | TASK [Install Mysql server] ******************************************************************************************************************************************************************
+2022-09-05 12:46:51,280 p=3126 u=ubuntu n=ansible | fatal: [n2]: FAILED! => {"changed": false, "msg": "No package matching 'mariadb-server' is available"}
+2022-09-05 12:46:51,301 p=3126 u=ubuntu n=ansible | fatal: [n1]: FAILED! => {"changed": false, "msg": "No package matching 'mariadb-server' is available"}
+2022-09-05 12:46:51,305 p=3126 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2022-09-05 12:46:51,305 p=3126 u=ubuntu n=ansible | n1                         : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-05 12:46:51,305 p=3126 u=ubuntu n=ansible | n2                         : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-05 12:52:12,474 p=3582 u=ubuntu n=ansible | PLAY [Setup DB] ******************************************************************************************************************************************************************************
+2022-09-05 12:52:12,487 p=3582 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2022-09-05 12:52:14,499 p=3582 u=ubuntu n=ansible | ok: [n2]
+2022-09-05 12:52:14,538 p=3582 u=ubuntu n=ansible | ok: [n1]
+2022-09-05 12:52:14,564 p=3582 u=ubuntu n=ansible | TASK [debug] *********************************************************************************************************************************************************************************
+2022-09-05 12:52:14,622 p=3582 u=ubuntu n=ansible | ok: [n1] => {
+    "dbname": "redhat"
+}
+2022-09-05 12:52:14,641 p=3582 u=ubuntu n=ansible | ok: [n2] => {
+    "dbname": "redhat"
+}
+2022-09-05 12:52:14,654 p=3582 u=ubuntu n=ansible | TASK [Install Mysql server] ******************************************************************************************************************************************************************
+2022-09-05 12:52:43,717 p=3582 u=ubuntu n=ansible | changed: [n2]
+2022-09-05 12:52:46,627 p=3582 u=ubuntu n=ansible | changed: [n1]
+2022-09-05 12:52:46,642 p=3582 u=ubuntu n=ansible | TASK [Install python Mysql] ******************************************************************************************************************************************************************
+2022-09-05 12:52:48,311 p=3582 u=ubuntu n=ansible | fatal: [n2]: FAILED! => {"changed": false, "msg": "No package matching 'MySQL-python' is available"}
+2022-09-05 12:52:48,584 p=3582 u=ubuntu n=ansible | fatal: [n1]: FAILED! => {"changed": false, "msg": "No package matching 'MySQL-python' is available"}
+2022-09-05 12:52:48,587 p=3582 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2022-09-05 12:52:48,588 p=3582 u=ubuntu n=ansible | n1                         : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-05 12:52:48,588 p=3582 u=ubuntu n=ansible | n2                         : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-05 14:03:03,624 p=4080 u=ubuntu n=ansible | ERROR! The vars/main.yml file for role 'write-output' must contain a dictionary of variables
+2022-09-05 14:10:05,950 p=4092 u=ubuntu n=ansible | PLAY [Provioning Server] *********************************************************************************************************************************************************************
+2022-09-05 14:10:05,964 p=4092 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2022-09-05 14:10:08,369 p=4092 u=ubuntu n=ansible | ok: [n2]
+2022-09-05 14:10:08,418 p=4092 u=ubuntu n=ansible | ok: [n1]
+2022-09-05 14:10:08,446 p=4092 u=ubuntu n=ansible | TASK [write-output : Write vartiable onoutput file] ******************************************************************************************************************************************
+2022-09-05 14:10:09,499 p=4092 u=ubuntu n=ansible | changed: [n2]
+2022-09-05 14:10:09,516 p=4092 u=ubuntu n=ansible | changed: [n1]
+2022-09-05 14:10:09,553 p=4092 u=ubuntu n=ansible | RUNNING HANDLER [write-output : restart myservice] *******************************************************************************************************************************************
+2022-09-05 14:10:10,521 p=4092 u=ubuntu n=ansible | fatal: [n2]: FAILED! => {"changed": false, "msg": "Could not find the requested service myservice: host"}
+2022-09-05 14:10:10,538 p=4092 u=ubuntu n=ansible | fatal: [n1]: FAILED! => {"changed": false, "msg": "Could not find the requested service myservice: host"}
+2022-09-05 14:10:10,539 p=4092 u=ubuntu n=ansible | NO MORE HOSTS LEFT ***************************************************************************************************************************************************************************
+2022-09-05 14:10:10,542 p=4092 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2022-09-05 14:10:10,543 p=4092 u=ubuntu n=ansible | n1                         : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-05 14:10:10,543 p=4092 u=ubuntu n=ansible | n2                         : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-05 14:10:24,255 p=4175 u=ubuntu n=ansible | PLAY [Provioning Server] *********************************************************************************************************************************************************************
+2022-09-05 14:10:24,269 p=4175 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2022-09-05 14:10:25,740 p=4175 u=ubuntu n=ansible | ok: [n2]
+2022-09-05 14:10:25,787 p=4175 u=ubuntu n=ansible | ok: [n1]
+2022-09-05 14:10:25,814 p=4175 u=ubuntu n=ansible | TASK [write-output : Write vartiable onoutput file] ******************************************************************************************************************************************
+2022-09-05 14:10:26,847 p=4175 u=ubuntu n=ansible | ok: [n2]
+2022-09-05 14:10:26,855 p=4175 u=ubuntu n=ansible | ok: [n1]
+2022-09-05 14:10:26,902 p=4175 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2022-09-05 14:10:26,902 p=4175 u=ubuntu n=ansible | n1                         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-09-05 14:10:26,902 p=4175 u=ubuntu n=ansible | n2                         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-09-05 14:12:03,158 p=4232 u=ubuntu n=ansible | PLAY [Provioning Server] *********************************************************************************************************************************************************************
+2022-09-05 14:12:03,172 p=4232 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2022-09-05 14:12:05,218 p=4232 u=ubuntu n=ansible | ok: [n2]
+2022-09-05 14:12:05,247 p=4232 u=ubuntu n=ansible | ok: [n1]
+2022-09-05 14:12:05,274 p=4232 u=ubuntu n=ansible | TASK [write-output : Write vartiable onoutput file] ******************************************************************************************************************************************
+2022-09-05 14:12:06,316 p=4232 u=ubuntu n=ansible | ok: [n2]
+2022-09-05 14:12:06,333 p=4232 u=ubuntu n=ansible | ok: [n1]
+2022-09-05 14:12:06,381 p=4232 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2022-09-05 14:12:06,381 p=4232 u=ubuntu n=ansible | n1                         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-09-05 14:12:06,381 p=4232 u=ubuntu n=ansible | n2                         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-09-05 14:20:31,361 p=4498 u=ubuntu n=ansible | PLAY [Provioning Server] *********************************************************************************************************************************************************************
+2022-09-05 14:20:31,375 p=4498 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2022-09-05 14:20:33,404 p=4498 u=ubuntu n=ansible | ok: [n2]
+2022-09-05 14:20:33,443 p=4498 u=ubuntu n=ansible | ok: [n1]
+2022-09-05 14:20:33,470 p=4498 u=ubuntu n=ansible | TASK [write-output : Write vartiable onoutput file] ******************************************************************************************************************************************
+2022-09-05 14:20:34,543 p=4498 u=ubuntu n=ansible | changed: [n2]
+2022-09-05 14:20:34,558 p=4498 u=ubuntu n=ansible | changed: [n1]
+2022-09-05 14:20:34,594 p=4498 u=ubuntu n=ansible | RUNNING HANDLER [write-output : restart myservice] *******************************************************************************************************************************************
+2022-09-05 14:20:35,532 p=4498 u=ubuntu n=ansible | fatal: [n2]: FAILED! => {"changed": false, "msg": "Could not find the requested service myservice: host"}
+2022-09-05 14:20:35,554 p=4498 u=ubuntu n=ansible | fatal: [n1]: FAILED! => {"changed": false, "msg": "Could not find the requested service myservice: host"}
+2022-09-05 14:20:35,554 p=4498 u=ubuntu n=ansible | NO MORE HOSTS LEFT ***************************************************************************************************************************************************************************
+2022-09-05 14:20:35,557 p=4498 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2022-09-05 14:20:35,557 p=4498 u=ubuntu n=ansible | n1                         : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-05 14:20:35,557 p=4498 u=ubuntu n=ansible | n2                         : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-05 14:20:45,053 p=4581 u=ubuntu n=ansible | ansible-playbook [core 2.13.3]
+  config file = /home/ubuntu/vprofile/exercise1/ansible.cfg
+  configured module search path = ['/home/ubuntu/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/ubuntu/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
+  jinja version = 3.0.3
+  libyaml = True
+2022-09-05 14:20:45,053 p=4581 u=ubuntu n=ansible | Using /home/ubuntu/vprofile/exercise1/ansible.cfg as config file
+2022-09-05 14:20:45,225 p=4581 u=ubuntu n=ansible | Skipping callback 'default', as we already have a stdout callback.
+2022-09-05 14:20:45,225 p=4581 u=ubuntu n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2022-09-05 14:20:45,225 p=4581 u=ubuntu n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2022-09-05 14:20:45,225 p=4581 u=ubuntu n=ansible | PLAYBOOK: variable_output.yml ****************************************************************************************************************************************************************
+2022-09-05 14:20:45,226 p=4581 u=ubuntu n=ansible | 1 plays in variable_output.yml
+2022-09-05 14:20:45,227 p=4581 u=ubuntu n=ansible | PLAY [Provioning Server] *********************************************************************************************************************************************************************
+2022-09-05 14:20:45,241 p=4581 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2022-09-05 14:20:46,688 p=4581 u=ubuntu n=ansible | ok: [n2]
+2022-09-05 14:20:46,750 p=4581 u=ubuntu n=ansible | ok: [n1]
+2022-09-05 14:20:46,765 p=4581 u=ubuntu n=ansible | META: ran handlers
+2022-09-05 14:20:46,777 p=4581 u=ubuntu n=ansible | TASK [write-output : Write vartiable onoutput file] ******************************************************************************************************************************************
+2022-09-05 14:20:47,772 p=4581 u=ubuntu n=ansible | ok: [n2] => {"changed": false, "checksum": "23248cc275051bd03a286f821fe66f1f663bd11b", "dest": "/tmp/var_output.ansible", "gid": 0, "group": "root", "mode": "0644", "owner": "root", "path": "/tmp/var_output.ansible", "size": 29, "state": "file", "uid": 0}
+2022-09-05 14:20:47,779 p=4581 u=ubuntu n=ansible | ok: [n1] => {"changed": false, "checksum": "23248cc275051bd03a286f821fe66f1f663bd11b", "dest": "/tmp/var_output.ansible", "gid": 0, "group": "root", "mode": "0644", "owner": "root", "path": "/tmp/var_output.ansible", "size": 29, "state": "file", "uid": 0}
+2022-09-05 14:20:47,793 p=4581 u=ubuntu n=ansible | META: role_complete for n1
+2022-09-05 14:20:47,804 p=4581 u=ubuntu n=ansible | META: role_complete for n2
+2022-09-05 14:20:47,815 p=4581 u=ubuntu n=ansible | META: ran handlers
+2022-09-05 14:20:47,826 p=4581 u=ubuntu n=ansible | META: ran handlers
+2022-09-05 14:20:47,827 p=4581 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2022-09-05 14:20:47,828 p=4581 u=ubuntu n=ansible | n1                         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-09-05 14:20:47,828 p=4581 u=ubuntu n=ansible | n2                         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-09-05 14:22:24,069 p=4688 u=ubuntu n=ansible | ansible-playbook [core 2.13.3]
+  config file = /home/ubuntu/vprofile/exercise1/ansible.cfg
+  configured module search path = ['/home/ubuntu/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/ubuntu/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
+  jinja version = 3.0.3
+  libyaml = True
+2022-09-05 14:22:24,069 p=4688 u=ubuntu n=ansible | Using /home/ubuntu/vprofile/exercise1/ansible.cfg as config file
+2022-09-05 14:22:24,245 p=4688 u=ubuntu n=ansible | Skipping callback 'default', as we already have a stdout callback.
+2022-09-05 14:22:24,245 p=4688 u=ubuntu n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2022-09-05 14:22:24,245 p=4688 u=ubuntu n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2022-09-05 14:22:24,245 p=4688 u=ubuntu n=ansible | PLAYBOOK: variable_output.yml ****************************************************************************************************************************************************************
+2022-09-05 14:22:24,246 p=4688 u=ubuntu n=ansible | 1 plays in variable_output.yml
+2022-09-05 14:22:24,247 p=4688 u=ubuntu n=ansible | PLAY [Provioning Server] *********************************************************************************************************************************************************************
+2022-09-05 14:22:24,261 p=4688 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2022-09-05 14:22:26,289 p=4688 u=ubuntu n=ansible | ok: [n2]
+2022-09-05 14:22:26,333 p=4688 u=ubuntu n=ansible | ok: [n1]
+2022-09-05 14:22:26,349 p=4688 u=ubuntu n=ansible | META: ran handlers
+2022-09-05 14:22:26,361 p=4688 u=ubuntu n=ansible | TASK [write-output : Write vartiable onoutput file] ******************************************************************************************************************************************
+2022-09-05 14:22:27,427 p=4688 u=ubuntu n=ansible | changed: [n2] => {"changed": true, "checksum": "5cce8437eaca3070fa169b152dd3a98828643c53", "dest": "/tmp/var_output.ansible", "gid": 0, "group": "root", "md5sum": "2c3a59cdbe75f6a2c3171a7319ca8658", "mode": "0644", "owner": "root", "size": 31, "src": "/home/ubuntu/.ansible/tmp/ansible-tmp-1662387746.4697442-4721-196255430236948/source", "state": "file", "uid": 0}
+2022-09-05 14:22:27,444 p=4688 u=ubuntu n=ansible | changed: [n1] => {"changed": true, "checksum": "5cce8437eaca3070fa169b152dd3a98828643c53", "dest": "/tmp/var_output.ansible", "gid": 0, "group": "root", "md5sum": "2c3a59cdbe75f6a2c3171a7319ca8658", "mode": "0644", "owner": "root", "size": 31, "src": "/home/ubuntu/.ansible/tmp/ansible-tmp-1662387746.4431803-4720-277681983416147/source", "state": "file", "uid": 0}
+2022-09-05 14:22:27,459 p=4688 u=ubuntu n=ansible | META: role_complete for n1
+2022-09-05 14:22:27,470 p=4688 u=ubuntu n=ansible | META: role_complete for n2
+2022-09-05 14:22:27,481 p=4688 u=ubuntu n=ansible | RUNNING HANDLER [write-output : restart myservice] *******************************************************************************************************************************************
+2022-09-05 14:22:28,426 p=4688 u=ubuntu n=ansible | fatal: [n2]: FAILED! => {"changed": false, "msg": "Could not find the requested service myservice: host"}
+2022-09-05 14:22:28,448 p=4688 u=ubuntu n=ansible | fatal: [n1]: FAILED! => {"changed": false, "msg": "Could not find the requested service myservice: host"}
+2022-09-05 14:22:28,448 p=4688 u=ubuntu n=ansible | META: ran handlers
+2022-09-05 14:22:28,449 p=4688 u=ubuntu n=ansible | NO MORE HOSTS LEFT ***************************************************************************************************************************************************************************
+2022-09-05 14:22:28,452 p=4688 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2022-09-05 14:22:28,452 p=4688 u=ubuntu n=ansible | n1                         : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-05 14:22:28,453 p=4688 u=ubuntu n=ansible | n2                         : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-05 14:38:17,839 p=5020 u=ubuntu n=ansible | PLAY [Provioning Server] *********************************************************************************************************************************************************************
+2022-09-05 14:38:17,853 p=5020 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2022-09-05 14:38:19,889 p=5020 u=ubuntu n=ansible | ok: [n2]
+2022-09-05 14:38:19,921 p=5020 u=ubuntu n=ansible | ok: [n1]
+2022-09-05 14:38:19,949 p=5020 u=ubuntu n=ansible | TASK [write-output : Write vartiable onoutput file] ******************************************************************************************************************************************
+2022-09-05 14:38:21,019 p=5020 u=ubuntu n=ansible | fatal: [n2]: FAILED! => {"changed": false, "checksum": "8e87c3cc2821d2f6b5140b4394c3bb4afa9ba971", "msg": "Destination directory /home/ubuntu/vprofile/exercise1 does not exist"}
+2022-09-05 14:38:21,036 p=5020 u=ubuntu n=ansible | fatal: [n1]: FAILED! => {"changed": false, "checksum": "8e87c3cc2821d2f6b5140b4394c3bb4afa9ba971", "msg": "Destination directory /home/ubuntu/vprofile/exercise1 does not exist"}
+2022-09-05 14:38:21,040 p=5020 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2022-09-05 14:38:21,040 p=5020 u=ubuntu n=ansible | n1                         : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-05 14:38:21,041 p=5020 u=ubuntu n=ansible | n2                         : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-05 14:39:16,162 p=5088 u=ubuntu n=ansible | PLAY [Provioning Server] *********************************************************************************************************************************************************************
+2022-09-05 14:39:16,176 p=5088 u=ubuntu n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2022-09-05 14:39:17,641 p=5088 u=ubuntu n=ansible | ok: [n2]
+2022-09-05 14:39:17,692 p=5088 u=ubuntu n=ansible | ok: [n1]
+2022-09-05 14:39:17,719 p=5088 u=ubuntu n=ansible | TASK [write-output : Write vartiable onoutput file] ******************************************************************************************************************************************
+2022-09-05 14:39:18,749 p=5088 u=ubuntu n=ansible | changed: [n2]
+2022-09-05 14:39:18,756 p=5088 u=ubuntu n=ansible | changed: [n1]
+2022-09-05 14:39:18,792 p=5088 u=ubuntu n=ansible | RUNNING HANDLER [write-output : restart myservice] *******************************************************************************************************************************************
+2022-09-05 14:39:19,740 p=5088 u=ubuntu n=ansible | fatal: [n2]: FAILED! => {"changed": false, "msg": "Could not find the requested service myservice: host"}
+2022-09-05 14:39:19,756 p=5088 u=ubuntu n=ansible | fatal: [n1]: FAILED! => {"changed": false, "msg": "Could not find the requested service myservice: host"}
+2022-09-05 14:39:19,757 p=5088 u=ubuntu n=ansible | NO MORE HOSTS LEFT ***************************************************************************************************************************************************************************
+2022-09-05 14:39:19,760 p=5088 u=ubuntu n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2022-09-05 14:39:19,760 p=5088 u=ubuntu n=ansible | n1                         : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-05 14:39:19,760 p=5088 u=ubuntu n=ansible | n2                         : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   

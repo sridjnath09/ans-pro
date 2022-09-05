@@ -1,0 +1,7 @@
+---
+# handlers file for write-output
+- name: restart myservice
+  service:
+    name: myservice
+    state: restarted
+
